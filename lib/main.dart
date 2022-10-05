@@ -8,32 +8,12 @@ main() {
 }
 
 class MyApp extends StatelessWidget {
-  List<Widget> myList = [
-    Container(
-      width: 400,
-      height: 400,
-      color: Colors.blueAccent,
-    ),
-    Container(
-      width: 400,
-      height: 400,
-      color: Colors.lime,
-    ),
-    Container(
-      width: 400,
-      height: 400,
-      color: Colors.orange,
-    ),
-    Container(
-      width: 400,
-      height: 400,
-      color: Colors.red,
-    ),
-    Container(
-      width: 400,
-      height: 400,
-      color: Colors.greenAccent[400],
-    ),
+  List<Color> myColors = [
+    Colors.blueAccent,
+    Colors.lime,
+    Colors.orange,
+    Colors.red,
+    Colors.greenAccent[400]
   ];
   @override
   Widget build(BuildContext context) {
@@ -43,9 +23,16 @@ class MyApp extends StatelessWidget {
         appBar: AppBar(
           title: Text("My App"),
         ),
-        body: ListView(
-            // scrollDirection: Axis.horizontal,
-            children: myList),
+        body: ListView.builder(
+          itemCount: myColors.length,
+          itemBuilder: (context, index) {
+            return Container(
+              width: 400,
+              height: 400,
+              color: myColors[index],
+            );
+          },
+        ),
       ),
     );
   }
