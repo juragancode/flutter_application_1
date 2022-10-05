@@ -16,6 +16,7 @@ class MyApp extends StatelessWidget {
     Colors.red,
     Colors.deepPurple,
   ];
+
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -33,7 +34,10 @@ class MyApp extends StatelessWidget {
             return Container(
               width: 400,
               height: 400,
-              color: myColors[index],
+              decoration: BoxDecoration(
+                borderRadius: BorderRadius.circular(20),
+                color: myColors[index],
+              ),
             );
           },
         ),
