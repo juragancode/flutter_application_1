@@ -11,9 +11,10 @@ class MyApp extends StatelessWidget {
   List<Color> myColors = [
     Colors.blueAccent,
     Colors.lime,
+    Colors.greenAccent[400],
     Colors.orange,
     Colors.red,
-    Colors.greenAccent[400]
+    Colors.deepPurple,
   ];
   @override
   Widget build(BuildContext context) {
@@ -23,7 +24,10 @@ class MyApp extends StatelessWidget {
         appBar: AppBar(
           title: Text("My App"),
         ),
-        body: ListView.builder(
+        body: ListView.separated(
+          separatorBuilder: (context, index) {
+            return Divider();
+          },
           itemCount: myColors.length,
           itemBuilder: (context, index) {
             return Container(
