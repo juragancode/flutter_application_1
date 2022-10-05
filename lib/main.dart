@@ -16,24 +16,33 @@ class MyApp extends StatelessWidget {
         appBar: AppBar(
           title: Text("My App"),
         ),
-        body: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          crossAxisAlignment: CrossAxisAlignment.center,
+        body: ListView(
+          // scrollDirection: Axis.horizontal,
           children: [
             Container(
-              width: 250,
-              height: 50,
-              color: Colors.orange,
+              width: 400,
+              height: 400,
+              color: Colors.blueAccent,
             ),
             Container(
-              width: 300,
-              height: 50,
+              width: 400,
+              height: 400,
               color: Colors.lime,
             ),
             Container(
-              width: 350,
-              height: 50,
-              color: Colors.teal,
+              width: 400,
+              height: 400,
+              color: Colors.orange,
+            ),
+            Container(
+              width: 400,
+              height: 400,
+              color: Colors.red,
+            ),
+            Container(
+              width: 400,
+              height: 400,
+              color: Colors.greenAccent[400],
             ),
           ],
         ),
