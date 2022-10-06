@@ -24,102 +24,22 @@ class MyApp extends StatelessWidget {
       home: Scaffold(
         appBar: AppBar(
           centerTitle: true,
-          title: Text("List Tile"),
+          title: Text("Image Widget"),
         ),
-        body: ListView(
-          children: [
-            ListTile(
-              title: Text("Hermawan Rinnaldi"),
-              subtitle: Text(
-                "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-                maxLines: 3,
-                overflow: TextOverflow.ellipsis,
+        body: Center(
+          child: Container(
+            height: 800,
+            width: 400,
+            color: Colors.grey,
+            // alignment: Alignment.center,
+            child: Image(
+              image: AssetImage(
+                "images/ankita-khante-unXipCiVSDY-unsplash.jpg",
               ),
-              leading: CircleAvatar(),
-              trailing: Text("12:30 PM"),
+              // image: NetworkImage(
+              //     "https://cdn.pixabay.com/photo/2016/03/08/20/03/flag-1244649_960_720.jpg"),
             ),
-            Divider(
-              color: Colors.black,
-            ),
-            ListTile(
-              title: Text("Hermawan Rinnaldi"),
-              subtitle: Text("This is subtitle"),
-              leading: CircleAvatar(),
-              trailing: Text("12:30 PM"),
-            ),
-            Divider(
-              color: Colors.black,
-            ),
-            ListTile(
-              title: Text("Hermawan Rinnaldi"),
-              subtitle: Text("This is subtitle"),
-              leading: CircleAvatar(),
-              trailing: Text("12:30 PM"),
-            ),
-            Divider(
-              color: Colors.black,
-            ),
-            ListTile(
-              title: Text("Hermawan Rinnaldi"),
-              subtitle: Text("This is subtitle"),
-              leading: CircleAvatar(),
-              trailing: Text("12:30 PM"),
-            ),
-            Divider(
-              color: Colors.black,
-            ),
-            ListTile(
-              title: Text("Hermawan Rinnaldi"),
-              subtitle: Text("This is subtitle"),
-              leading: CircleAvatar(),
-              trailing: Text("12:30 PM"),
-            ),
-            Divider(
-              color: Colors.black,
-            ),
-            ListTile(
-              title: Text("Hermawan Rinnaldi"),
-              subtitle: Text("This is subtitle"),
-              leading: CircleAvatar(),
-              trailing: Text("12:30 PM"),
-            ),
-            Divider(
-              color: Colors.black,
-            ),
-            ListTile(
-              title: Text("Hermawan Rinnaldi"),
-              subtitle: Text("This is subtitle"),
-              leading: CircleAvatar(),
-              trailing: Text("12:30 PM"),
-            ),
-            Divider(
-              color: Colors.black,
-            ),
-            ListTile(
-              title: Text("Hermawan Rinnaldi"),
-              subtitle: Text("This is subtitle"),
-              leading: CircleAvatar(),
-              trailing: Text("12:30 PM"),
-            ),
-            Divider(
-              color: Colors.black,
-            ),
-            ListTile(
-              title: Text("Hermawan Rinnaldi"),
-              subtitle: Text("This is subtitle"),
-              leading: CircleAvatar(),
-              trailing: Text("12:30 PM"),
-            ),
-            Divider(
-              color: Colors.black,
-            ),
-            ListTile(
-              title: Text("Hermawan Rinnaldi"),
-              subtitle: Text("This is subtitle"),
-              leading: CircleAvatar(),
-              trailing: Text("12:30 PM"),
-            ),
-          ],
+          ),
         ),
       ),
     );
