@@ -31,13 +31,12 @@ class MyApp extends StatelessWidget {
             height: 800,
             width: 400,
             color: Colors.grey,
-            // alignment: Alignment.center,
+            alignment: Alignment.center,
             child: Image(
-              image: AssetImage(
-                "images/ankita-khante-unXipCiVSDY-unsplash.jpg",
-              ),
-              // image: NetworkImage(
-              //     "https://cdn.pixabay.com/photo/2016/03/08/20/03/flag-1244649_960_720.jpg"),
+              //   image: AssetImage(
+              //     "images/ankita-khante-unXipCiVSDY-unsplash.jpg",
+              //   ),
+              image: NetworkImage("https://picsum.photos/200/300"),
             ),
           ),
         ),
