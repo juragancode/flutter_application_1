@@ -33,11 +33,23 @@ void main() {
   var nama = "Nadhira";
   var umurKorea = 20;
   var umurTambahanMasehi = 5;
+  bool isMale = false;
+  num usia = 27;
+  double harga = 5000;
+  double Uang = 2000;
+  List<String> bulan = ["Januari", "Maret", "April"];
+  List warna = ["merah", "kuning", "hijau", 454545, 464646, 717171];
+  List<dynamic> warni = ["merah", "kuning", "hijau", "biru", 464646, 717171];
 
   print(
-      "Hello $nama... Yang saat ini berusia ${umurKorea + umurTambahanMasehi}");
+      "Hello $nama... Yang saat ini berusia ${umurKorea + umurTambahanMasehi}. Seorang laki-lai = $isMale");
   print(umurKorea + umurTambahanMasehi);
-  print("Hello Waw");
-  print("Hello Who?");
-  print("Hello Bang!");
+  print('Saat ini Laura berusia $usia tahun');
+  print("Harga 1 porsi seblak yaitu Rp. ${harga.abs()}");
+  print("$nama saat ini menyisakan utang sebesar ${Uang - harga}");
+  print(bulan);
+  print(warna);
+  print(warni[0]);
+  print("${warni[1]} = yellow");
+  print(warni[2]);
 }
