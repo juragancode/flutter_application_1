@@ -68,35 +68,47 @@
 //   pengurangan(55, 30);
 // }
 
+// void main() {
+//   print("a");
+//   cetakB()
+//       .then((data) => print("Sukses!!!"))
+//       .catchError((err) => print("Error!!!"));
+//   print("c");
+//   print("d");
+//   cetakE().then((data) => print(data));
+//   cetakF().then((data) => print(data)).catchError((err) => print(err));
+// }
+
+// Future<void> cetakB() async {
+//   await Future.delayed(Duration(microseconds: 10000), () {
+//     print("b");
+//   });
+
+//   print("Berhasil cetak = b");
+// }
+
+// Future<String> cetakE() async {
+//   await Future;
+//   print("e");
+
+//   return "Berhasil cetak = e";
+// }
+
+// Future<String> cetakF() async {
+//   await Future;
+//   print("gagal -> f");
+
+//   throw "Gagal cetak = f";
+// }
+
 void main() {
-  print("a");
-  cetakB()
-      .then((data) => print("Sukses!!!"))
-      .catchError((err) => print("Error!!!"));
-  print("c");
-  print("d");
-  cetakE().then((data) => print(data));
-  cetakF().then((data) => print(data)).catchError((err) => print(err));
-}
+  try {
+    int usia = int.parse("abc");
 
-Future<void> cetakB() async {
-  await Future.delayed(Duration(microseconds: 10000), () {
-    print("b");
-  });
-
-  print("Berhasil cetak = b");
-}
-
-Future<String> cetakE() async {
-  await Future;
-  print("e");
-
-  return "Berhasil cetak = e";
-}
-
-Future<String> cetakF() async {
-  await Future;
-  print("gagal -> f");
-
-  throw "Gagal cetak = f";
+    print(usia);
+  } on FormatException {
+    print("Data yang diinput harus berupa angka!");
+  } catch (e) {
+    print("General error... Kembali cek secara meneluruh!");
+  }
 }
