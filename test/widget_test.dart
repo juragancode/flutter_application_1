@@ -163,20 +163,20 @@
 //   }
 // }
 
-void main() {
-  List<String> motor = [
-    "Shougun",
-    "Supra",
-    "Satria",
-    "Astrea",
-    "Mio",
-    "Nmax",
-  ];
+// void main() {
+//   List<String> motor = [
+//     "Shougun",
+//     "Supra",
+//     "Satria",
+//     "Astrea",
+//     "Mio",
+//     "Nmax",
+//   ];
 
-  for (String mot in motor) {
-    print("Motor : $mot");
-  }
-}
+//   for (String mot in motor) {
+//     print("Motor : $mot");
+//   }
+// }
 
 // void main() {
 //   List<String> motor = [
@@ -190,3 +190,25 @@ void main() {
 
 //   motor.forEach((m) => print("Motor : $m"));
 // }
+
+void main() {
+  String nama = "Visenia";
+//   if (nama == "Alena") {
+//     print("Benar $nama adalah mesiah yang telah lama dinanti.");
+//   } else if (nama == "Visenia") {
+//     print("$nama merupakan sang penjaga zaman, sampai mesiah muncul.");
+//   } else {
+//     print("$nama bukan seorang mesiah.");
+//   }
+
+  switch (nama) {
+    case "Alena":
+      print("Benar $nama adalah mesiah yang telah lama dinanti.");
+      break;
+    case "Visenia":
+      print("$nama merupakan sang penjaga zaman, sampai mesiah muncul.");
+      break;
+    default:
+      print("$nama bukan seorang mesiah.");
+  }
+}
