@@ -101,14 +101,92 @@
 //   throw "Gagal cetak = f";
 // }
 
-void main() {
-  try {
-    int usia = int.parse("abc");
+// void main() {
+//   try {
+//     int usia = int.parse("abc");
 
-    print(usia);
-  } on FormatException {
-    print("Data yang diinput harus berupa angka!");
-  } catch (e) {
-    print("General error... Kembali cek secara meneluruh!");
+//     print(usia);
+//   } on FormatException {
+//     print("Data yang diinput harus berupa angka!");
+//   } catch (e) {
+//     print("General error... Kembali cek secara meneluruh!");
+//   }
+// }
+
+// void main() {
+//   for (int i = 1; i <= 100000; i++) {
+//     print(i);
+//   }
+// }
+
+// void main() {
+//   for (int i = 1; i >= 10; i--) {
+//     print(i);
+//   }
+// }
+
+// void main() {
+//   int i = 1;
+//   do {
+//     print(i);
+//     i++;
+//   } while (i <= 10);
+// }
+
+// void main() {
+//   List<String> motor = [
+//     "Shougun",
+//     "Supra",
+//     "Satria",
+//     "Astrea",
+//     "Mio",
+//     "Nmax",
+//   ];
+
+//   for (int i = 0; i <= motor.length - 1; i++) {
+//     print("Motor : ${motor[i]}");
+//   }
+// }
+
+// void main() {
+//   List<String> motor = [
+//     "Shougun",
+//     "Supra",
+//     "Satria",
+//     "Astrea",
+//     "Mio",
+//     "Nmax",
+//   ];
+
+//   for (int i = 0; i < motor.length; i++) {
+//     print("Motor : ${motor[i]}");
+//   }
+// }
+
+void main() {
+  List<String> motor = [
+    "Shougun",
+    "Supra",
+    "Satria",
+    "Astrea",
+    "Mio",
+    "Nmax",
+  ];
+
+  for (String mot in motor) {
+    print("Motor : $mot");
   }
 }
+
+// void main() {
+//   List<String> motor = [
+//     "Shougun",
+//     "Supra",
+//     "Satria",
+//     "Astrea",
+//     "Mio",
+//     "Nmax",
+//   ];
+
+//   motor.forEach((m) => print("Motor : $m"));
+// }
