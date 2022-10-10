@@ -191,24 +191,110 @@
 //   motor.forEach((m) => print("Motor : $m"));
 // }
 
-void main() {
-  String nama = "Visenia";
-//   if (nama == "Alena") {
-//     print("Benar $nama adalah mesiah yang telah lama dinanti.");
-//   } else if (nama == "Visenia") {
-//     print("$nama merupakan sang penjaga zaman, sampai mesiah muncul.");
-//   } else {
-//     print("$nama bukan seorang mesiah.");
-//   }
+// void main() {
+//   String nama = "Visenia";
+// //   if (nama == "Alena") {
+// //     print("Benar $nama adalah mesiah yang telah lama dinanti.");
+// //   } else if (nama == "Visenia") {
+// //     print("$nama merupakan sang penjaga zaman, sampai mesiah muncul.");
+// //   } else {
+// //     print("$nama bukan seorang mesiah.");
+// //   }
 
-  switch (nama) {
-    case "Alena":
-      print("Benar $nama adalah mesiah yang telah lama dinanti.");
-      break;
-    case "Visenia":
-      print("$nama merupakan sang penjaga zaman, sampai mesiah muncul.");
-      break;
-    default:
-      print("$nama bukan seorang mesiah.");
+//   switch (nama) {
+//     case "Alena":
+//       print("Benar $nama adalah mesiah yang telah lama dinanti.");
+//       break;
+//     case "Visenia":
+//       print("$nama merupakan sang penjaga zaman, sampai mesiah muncul.");
+//       break;
+//     default:
+//       print("$nama bukan seorang mesiah.");
+//   }
+// }
+
+void main() {
+  // collection -> variable yang bisa menyimpan 0 - banyak data;
+  // list
+
+  List mobil = [
+    "Bentley",
+    "Aston Martin",
+    "Ferrari",
+    "Koenigsegg",
+    "Hummer",
+    "Lamborghini",
+    "Lykan Hypersport",
+    "Volkswagen Caravelle",
+    "Porsche",
+    "Mercedes-Benz",
+    "BMW",
+    "Rolls-Royce",
+    "Bugatti",
+    "McLaren",
+    "Range Rover",
+    "Chevrolet Camaro",
+    "Ford Mustang Mach 1 1969"
+  ];
+
+//   mobil.forEach((el) => print(el));
+
+  int i = 0;
+
+//   mobil.forEach((el) {
+//     print("Mobil ke - ${i + 1}: $el");
+//     i++;
+//   });
+
+  for (String el in mobil) {
+    print("Mobil ke - ${i + 1}: $el");
+    i++;
   }
+  print(
+      "════════════════════════════════════════════════════════════════════════════════════════════");
+  // List [array]
+  List matematikaList = [
+    {78, 76, 68, 93, 72, 69, 75},
+    "ABCDEFGH"
+  ];
+  print(matematikaList);
+  print(matematikaList[1]);
+  print(matematikaList[0].elementAt(0));
+  print(
+      "════════════════════════════════════════════════════════════════════════════════════════════");
+  // Set {object}
+  Set matematikaSet = {78, 76, 68, 93, 72, 69, 75};
+  Set logikaSet = {100, 89, 99, 98, 98, 97, 93};
+  print(matematikaSet);
+  print(matematikaSet.elementAt(0));
+  print(matematikaSet.elementAt(1));
+
+  print(matematikaSet.union(logikaSet));
+  print(matematikaSet.intersection(logikaSet));
+  print(
+      "════════════════════════════════════════════════════════════════════════════════════════════");
+  // Map
+  // Key : Value
+  Map nilai = {
+    "matematika": [88, 96, 68, 93, 92, 79, 95],
+    "logika": [100, 89, 99, 98, 98, 97, 93],
+  };
+  print(nilai["matematika"]);
+  print(nilai["logika"]);
+
+  print(
+      "════════════════════════════════════════════════════════════════════════════════════════════");
+  List data = [88, 86, 88, 93, 82, 89, 95];
+
+  // tambahan data
+  List dataTerbaru = [...data, 96, 98, 99, 100];
+  print(dataTerbaru);
+
+  print(
+      "════════════════════════════════════════════════════════════════════════════════════════════");
+  Set val = {88, 86, 88, 93, 82, 89, 95};
+
+  // dalam Set nilai yang sama hanya ditulis 1 kali, lebih baik menggunakan List
+  Set valTerbaru = {...val, 96, 98, 99, 100};
+  print(valTerbaru);
 }
