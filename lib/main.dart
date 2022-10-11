@@ -11,7 +11,7 @@ class MyApp extends StatelessWidget {
   List<Color> myColors = [
     Colors.blueAccent,
     Colors.lime,
-    Colors.greenAccent[400],
+    Colors.greenAccent.shade400,
     Colors.orange,
     Colors.red,
     Colors.deepPurple,

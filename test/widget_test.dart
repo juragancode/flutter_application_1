@@ -213,88 +213,173 @@
 //   }
 // }
 
-void main() {
-  // collection -> variable yang bisa menyimpan 0 - banyak data;
-  // list
+// void main() {
+//   // collection -> variable yang bisa menyimpan 0 - banyak data;
+//   // list
 
-  List mobil = [
-    "Bentley",
-    "Aston Martin",
-    "Ferrari",
-    "Koenigsegg",
-    "Hummer",
-    "Lamborghini",
-    "Lykan Hypersport",
-    "Volkswagen Caravelle",
-    "Porsche",
-    "Mercedes-Benz",
-    "BMW",
-    "Rolls-Royce",
-    "Bugatti",
-    "McLaren",
-    "Range Rover",
-    "Chevrolet Camaro",
-    "Ford Mustang Mach 1 1969"
-  ];
+//   List mobil = [
+//     "Bentley",
+//     "Aston Martin",
+//     "Ferrari",
+//     "Koenigsegg",
+//     "Hummer",
+//     "Lamborghini",
+//     "Lykan Hypersport",
+//     "Volkswagen Caravelle",
+//     "Porsche",
+//     "Mercedes-Benz",
+//     "BMW",
+//     "Rolls-Royce",
+//     "Bugatti",
+//     "McLaren",
+//     "Range Rover",
+//     "Chevrolet Camaro",
+//     "Ford Mustang Mach 1 1969"
+//   ];
 
-//   mobil.forEach((el) => print(el));
+// //   mobil.forEach((el) => print(el));
 
-  int i = 0;
+//   int i = 0;
 
-//   mobil.forEach((el) {
+// //   mobil.forEach((el) {
+// //     print("Mobil ke - ${i + 1}: $el");
+// //     i++;
+// //   });
+
+//   for (String el in mobil) {
 //     print("Mobil ke - ${i + 1}: $el");
 //     i++;
-//   });
+//   }
+//   print(
+//       "════════════════════════════════════════════════════════════════════════════════════════════");
+//   // List [array]
+//   List matematikaList = [
+//     {78, 76, 68, 93, 72, 69, 75},
+//     "ABCDEFGH"
+//   ];
+//   print(matematikaList);
+//   print(matematikaList[1]);
+//   print(matematikaList[0].elementAt(0));
+//   print(
+//       "════════════════════════════════════════════════════════════════════════════════════════════");
+//   // Set {object}
+//   Set matematikaSet = {78, 76, 68, 93, 72, 69, 75};
+//   Set logikaSet = {100, 89, 99, 98, 98, 97, 93};
+//   print(matematikaSet);
+//   print(matematikaSet.elementAt(0));
+//   print(matematikaSet.elementAt(1));
 
-  for (String el in mobil) {
-    print("Mobil ke - ${i + 1}: $el");
-    i++;
-  }
-  print(
-      "════════════════════════════════════════════════════════════════════════════════════════════");
-  // List [array]
-  List matematikaList = [
-    {78, 76, 68, 93, 72, 69, 75},
-    "ABCDEFGH"
-  ];
-  print(matematikaList);
-  print(matematikaList[1]);
-  print(matematikaList[0].elementAt(0));
-  print(
-      "════════════════════════════════════════════════════════════════════════════════════════════");
-  // Set {object}
-  Set matematikaSet = {78, 76, 68, 93, 72, 69, 75};
-  Set logikaSet = {100, 89, 99, 98, 98, 97, 93};
-  print(matematikaSet);
-  print(matematikaSet.elementAt(0));
-  print(matematikaSet.elementAt(1));
+//   print(matematikaSet.union(logikaSet));
+//   print(matematikaSet.intersection(logikaSet));
+//   print(
+//       "════════════════════════════════════════════════════════════════════════════════════════════");
+//   // Map
+//   // Key : Value
+//   Map nilai = {
+//     "matematika": [88, 96, 68, 93, 92, 79, 95],
+//     "logika": [100, 89, 99, 98, 98, 97, 93],
+//   };
+//   print(nilai["matematika"]);
+//   print(nilai["logika"]);
 
-  print(matematikaSet.union(logikaSet));
-  print(matematikaSet.intersection(logikaSet));
-  print(
-      "════════════════════════════════════════════════════════════════════════════════════════════");
-  // Map
-  // Key : Value
-  Map nilai = {
-    "matematika": [88, 96, 68, 93, 92, 79, 95],
-    "logika": [100, 89, 99, 98, 98, 97, 93],
-  };
-  print(nilai["matematika"]);
-  print(nilai["logika"]);
+//   print(
+//       "════════════════════════════════════════════════════════════════════════════════════════════");
+//   List data = [88, 86, 88, 93, 82, 89, 95];
 
-  print(
-      "════════════════════════════════════════════════════════════════════════════════════════════");
-  List data = [88, 86, 88, 93, 82, 89, 95];
+//   // tambahan data
+//   List dataTerbaru = [...data, 96, 98, 99, 100];
+//   print(dataTerbaru);
 
-  // tambahan data
-  List dataTerbaru = [...data, 96, 98, 99, 100];
-  print(dataTerbaru);
+//   print(
+//       "════════════════════════════════════════════════════════════════════════════════════════════");
+//   Set val = {88, 86, 88, 93, 82, 89, 95};
 
-  print(
-      "════════════════════════════════════════════════════════════════════════════════════════════");
-  Set val = {88, 86, 88, 93, 82, 89, 95};
+//   // dalam Set nilai yang sama hanya ditulis 1 kali, lebih baik menggunakan List
+//   Set valTerbaru = {...val, 96, 98, 99, 100};
+//   print(valTerbaru);
+// }
 
-  // dalam Set nilai yang sama hanya ditulis 1 kali, lebih baik menggunakan List
-  Set valTerbaru = {...val, 96, 98, 99, 100};
-  print(valTerbaru);
+/// Null Safety -> Fitur untuk
+
+////------------------------------------------JEDA---------------------------------------------////
+// String? getAlias() {
+//   // return null;
+//   "Ágata Jiménez";
+// }
+
+// void main() {
+//   String nama = "Nairobi";
+//   String? alias = getAlias();
+
+//   String? gelar;
+//   String? penghargaan; //= "Anumerta";
+
+//   print(nama);
+//   print(nama.length);
+//   print(nama.codeUnits);
+//   print(nama.runes);
+//   print("Nama kosong : ${nama.isEmpty}");
+//   print("Nama telah diisi : ${nama.isNotEmpty}");
+//   print("Tipe data : ${nama.runtimeType}");
+//   print(nama.hashCode);
+//   print(
+//       "════════════════════════════════════════════════════════════════════════════════════════════");
+//   print(gelar);
+//   print("Tipe data : ${gelar.runtimeType}");
+//   print(gelar.hashCode);
+//   print(
+//       "════════════════════════════════════════════════════════════════════════════════════════════");
+//   print(penghargaan?.length);
+//   print("Tipe data : ${penghargaan?.runtimeType}");
+//   print(penghargaan?.hashCode);
+
+//   if (penghargaan?.length == null) {
+//     print("Tidak ada penghargaan!");
+//   } else {
+//     print(penghargaan);
+//   }
+
+//   print(
+//       "════════════════════════════════════════════════════════════════════════════════════════════");
+
+//   /// 1.  ?   -> variable diperbolehkan null
+//   /// 2.  ?   -> untuk handle null
+//   /// 3.  ?   -> apabila sudah bisa dipastikan data sdh pasti ada / tdk null
+//   /// 4. late -> apabila sudah bisa dipastikan data sdh pasti ada / tdk null
+
+//   // print("$alias terdiri dari ${alias!.length} karakter"); // error null test
+
+//   if (alias == null) {
+//     // handle null
+//     print("Tidak ada data alias!");
+//   } else {
+//     // else (lawan) dari null - sudah pasti ada data
+//     print("$alias terdiri dari ${alias!.length} karakter");
+//   }
+
+//   // print("$alias terdiri dari ${alias?.length} karakter" ??
+//   //     "Tidak ada data alias!");
+// }
+
+//// const vs final
+//// const
+// void main (){
+//   const String data = "Flutter";
+//   print(data);
+// }
+
+//// final
+// void main (){
+// final DateTime date = DateTime.now();
+//   print(date);
+// }
+
+void main() {
+  late String? object;
+  object = "Jeenna";
+  printObject(object);
+}
+
+void printObject(String? parameterObject) {
+  print(parameterObject);
 }
