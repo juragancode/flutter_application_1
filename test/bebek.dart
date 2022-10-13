@@ -1,13 +1,13 @@
 import './hewan.dart';
+import './mixin/renang.dart';
 import './mixin/lari.dart';
-import 'mixin/lari.dart';
 
-class Kuda extends Hewan with Lari {
+class Bebek extends Hewan with Renang, Lari {
   late int jumlahKaki;
 
-  Kuda({required double berat, required this.jumlahKaki})
+  Bebek({required double berat, required this.jumlahKaki})
       : super(
-          nama: "Kuda",
+          nama: "Bebek",
           berat: berat,
           kategori: "Domestikasi",
         );

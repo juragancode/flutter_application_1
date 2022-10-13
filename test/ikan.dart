@@ -1,9 +1,8 @@
 import './hewan.dart';
+import './mixin/renang.dart';
 
-class Ikan extends Hewan {
-  double? kecepatanRenang;
-
-  Ikan({required double berat, this.kecepatanRenang})
+class Ikan extends Hewan with Renang {
+  Ikan({required double berat})
       : super(
           nama: "Ikan Tongkol Mario T",
           berat: berat,

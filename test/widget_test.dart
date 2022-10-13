@@ -413,18 +413,15 @@ import 'dart:ffi';
 import './ikan.dart';
 import './kuda.dart';
 import './burung.dart';
+import './bebek.dart';
 
 void main() {
-  Kuda hewan1 = Kuda(berat: 187, jumlahKaki: 4, kecepatanLari: 34.67);
-  // Hewan hewan4 = Hewan(
-  //   berat: 187,
-  //   nama: "",
-  //   kategori: "",
-  // ); // tidak bisa diinisialisasi karena abstract class
+  Kuda hewan1 = Kuda(berat: 187, jumlahKaki: 4);
+  hewan1.kecepatanLari = 34.67;
   print("Hewan 1 : ${hewan1.nama}, Kategori : ${hewan1.kategori}");
   print("Berat : ${hewan1.berat} Kg");
-  print("Kecepatan Lari : ${hewan1.kecepatanLari} Km/Jam");
-  print("Jumlah Kaki : ${hewan1.jumlahKaki} kaki");
+  print("Kecepatan lari : ${hewan1.lari} Km/Jam");
+  print("Jumlah kaki : ${hewan1.jumlahKaki} kaki");
   print(
       "🥤🍜🍤🎂🍸🍰🍩🍨🍧🍦🥧🧁🍫🍬🍭🍡 ᗰᗩKᗩᑎ 🥤🍜🍤🎂🍸🍰🍩🍨🍧🍦🥧🧁🍫🍬🍭🍡");
   hewan1.makan = 5;
@@ -432,10 +429,11 @@ void main() {
   print(
       "════════════════════════════════════════════════════════════════════════════════════");
   print("\n");
-  Ikan hewan2 = Ikan(berat: 0.5, kecepatanRenang: 18.3);
+  Ikan hewan2 = Ikan(berat: 0.5);
+  hewan2.kecepatanRenang = 18.3;
   print("Hewan 2 : ${hewan2.nama}, Kategori : ${hewan2.kategori}");
   print("Berat : ${hewan2.berat} Kg");
-  print("Kecepatan renang : ${hewan2.kecepatanRenang} Km/Jam");
+  print("Kecepatan renang : ${hewan2.renang} Km/Jam");
   print(
       "🥤🍜🍤🎂🍸🍰🍩🍨🍧🍦🥧🧁🍫🍬🍭🍡 ᗰᗩKᗩᑎ 🥤🍜🍤🎂🍸🍰🍩🍨🍧🍦🥧🧁🍫🍬🍭🍡");
   hewan2.makan = 0.1;
@@ -443,14 +441,36 @@ void main() {
   print(
       "════════════════════════════════════════════════════════════════════════════════════");
   print("\n");
-  Burung hewan3 = Burung(berat: 0.3, jumlahKaki: 2, kecepatanTerbang: 6.7);
-
+  Burung hewan3 = Burung(
+    berat: 0.3,
+    jumlahKaki: 2,
+  );
+  hewan3.kecepatanTerbang = 6.7;
   print("Hewan 3 : ${hewan3.nama}, Kategori : ${hewan3.kategori}");
-  print("Jumlah Kaki : ${hewan3.jumlahKaki} kaki");
+  print("Jumlah kaki : ${hewan3.jumlahKaki} kaki");
   print("Berat : ${hewan3.berat} Kg");
-  print("Kecepatan Terbang : ${hewan3.kecepatanTerbang} Km/Jam");
+  print("Kecepatan terbang : ${hewan3.terbang} Km/Jam");
   print(
       "🥤🍜🍤🎂🍸🍰🍩🍨🍧🍦🥧🧁🍫🍬🍭🍡 ᗰᗩKᗩᑎ 🥤🍜🍤🎂🍸🍰🍩🍨🍧🍦🥧🧁🍫🍬🍭🍡");
   hewan3.makan = 0.06;
-  print("Berat hewan 2 setelah makan : ${hewan3.berat} Kg");
+  print("Berat hewan 3 setelah makan : ${hewan3.berat} Kg");
+  print(
+      "════════════════════════════════════════════════════════════════════════════════════");
+  print("\n");
+  Bebek hewan4 = Bebek(
+    berat: 1.7,
+    jumlahKaki: 2,
+  );
+  hewan4.kecepatanLari = 12.4;
+  hewan4.kecepatanRenang = 6.4;
+
+  print("Hewan 4 : ${hewan4.nama}, Kategori : ${hewan4.kategori}");
+  print("Jumlah kaki : ${hewan4.jumlahKaki} kaki");
+  print("Berat : ${hewan4.berat} Kg");
+  print("Kecepatan renang : ${hewan4.renang} Km/Jam");
+  print("Kecepatan lari : ${hewan4.lari} Km/Jam");
+  print(
+      "🥤🍜🍤🎂🍸🍰🍩🍨🍧🍦🥧🧁🍫🍬🍭🍡 ᗰᗩKᗩᑎ 🥤🍜🍤🎂🍸🍰🍩🍨🍧🍦🥧🧁🍫🍬🍭🍡");
+  hewan4.makan = 0.21;
+  print("Berat hewan 4 setelah makan : ${hewan4.berat} Kg");
 }
