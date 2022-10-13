@@ -299,6 +299,8 @@
 //   print(valTerbaru);
 // }
 
+import 'dart:ffi';
+
 /// Null Safety -> Fitur untuk
 
 ////------------------------------------------JEDA---------------------------------------------////
@@ -374,12 +376,35 @@
 //   print(date);
 // }
 
-void main() {
-  late String? object;
-  object = "Jeenna";
-  printObject(object);
-}
+// void main() {
+//   late String? object;
+//   object = "Jeenna";
+//   printObject(object);
+// }
 
-void printObject(String? parameterObject) {
-  print(parameterObject);
+// void printObject(String? parameterObject) {
+//   print(parameterObject);
+// }
+
+import 'pakaian.dart';
+
+void main() {
+  var pakaian1 = Pakaian(katagori: "Baju", warna: "Biru", size: "S");
+  // pakaian1.katagori = "Baju";
+  // pakaian1.warna = "Biru";
+
+  var pakaian2 = Pakaian(warna: "Hitam", size: "M", katagori: "Celana");
+  // pakaian2.katagori = "Celana";
+  // pakaian2.warna = "Hitam";
+  print(
+      "${pakaian1.katagori}, Warna : ${pakaian1.warna}, Size : ${pakaian1.size}");
+  print("Ganti Ukuran"); // tidak diizinkan mengganti private atribut
+  // pakaian1.gantiSize("XXS");
+  pakaian1.size = "XS";
+  print(
+      "${pakaian1.katagori}, Warna : ${pakaian1.warna}, Size : ${pakaian1.size}");
+  print(
+      "════════════════════════════════════════════════════════════════════════════════════════════");
+  print(
+      "${pakaian2.katagori}, Warna : ${pakaian2.warna}, Size : ${pakaian2.size}");
 }
