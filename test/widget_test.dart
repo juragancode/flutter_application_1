@@ -386,25 +386,71 @@ import 'dart:ffi';
 //   print(parameterObject);
 // }
 
-import 'pakaian.dart';
+// import 'pakaian.dart';
+
+// void main() {
+//   var pakaian1 = Pakaian(katagori: "Baju", warna: "Biru", size: "S");
+//   // pakaian1.katagori = "Baju";
+//   // pakaian1.warna = "Biru";
+
+//   var pakaian2 = Pakaian(warna: "Hitam", size: "M", katagori: "Celana");
+//   // pakaian2.katagori = "Celana";
+//   // pakaian2.warna = "Hitam";
+//   print(
+//       "${pakaian1.katagori}, Warna : ${pakaian1.warna}, Size : ${pakaian1.size}");
+//   print("Ganti Ukuran"); // tidak diizinkan mengganti private atribut
+//   // pakaian1.gantiSize("XXS");
+//   pakaian1.size = "XS";
+//   print(
+//       "${pakaian1.katagori}, Warna : ${pakaian1.warna}, Size : ${pakaian1.size}");
+//   print(
+//       "════════════════════════════════════════════════════════════════════════════════════════════");
+//   print(
+//       "${pakaian2.katagori}, Warna : ${pakaian2.warna}, Size : ${pakaian2.size}");
+// }
+
+// import './hewan.dart';
+import './ikan.dart';
+import './kuda.dart';
+import './burung.dart';
 
 void main() {
-  var pakaian1 = Pakaian(katagori: "Baju", warna: "Biru", size: "S");
-  // pakaian1.katagori = "Baju";
-  // pakaian1.warna = "Biru";
+  Kuda hewan1 = Kuda(berat: 187, jumlahKaki: 4, kecepatanLari: 34.67);
+  // Hewan hewan4 = Hewan(
+  //   berat: 187,
+  //   nama: "",
+  //   kategori: "",
+  // ); // tidak bisa diinisialisasi karena abstract class
+  print("Hewan 1 : ${hewan1.nama}, Kategori : ${hewan1.kategori}");
+  print("Berat : ${hewan1.berat} Kg");
+  print("Kecepatan Lari : ${hewan1.kecepatanLari} Km/Jam");
+  print("Jumlah Kaki : ${hewan1.jumlahKaki} kaki");
+  print(
+      "🥤🍜🍤🎂🍸🍰🍩🍨🍧🍦🥧🧁🍫🍬🍭🍡 ᗰᗩKᗩᑎ 🥤🍜🍤🎂🍸🍰🍩🍨🍧🍦🥧🧁🍫🍬🍭🍡");
+  hewan1.makan = 5;
+  print("Berat hewan 1 setelah makan : ${hewan1.berat} Kg");
+  print(
+      "════════════════════════════════════════════════════════════════════════════════════");
+  print("\n");
+  Ikan hewan2 = Ikan(berat: 0.5, kecepatanRenang: 18.3);
+  print("Hewan 2 : ${hewan2.nama}, Kategori : ${hewan2.kategori}");
+  print("Berat : ${hewan2.berat} Kg");
+  print("Kecepatan renang : ${hewan2.kecepatanRenang} Km/Jam");
+  print(
+      "🥤🍜🍤🎂🍸🍰🍩🍨🍧🍦🥧🧁🍫🍬🍭🍡 ᗰᗩKᗩᑎ 🥤🍜🍤🎂🍸🍰🍩🍨🍧🍦🥧🧁🍫🍬🍭🍡");
+  hewan2.makan = 0.1;
+  print("Berat hewan 2 setelah makan : ${hewan2.berat} Kg");
+  print(
+      "════════════════════════════════════════════════════════════════════════════════════");
+  print("\n");
+  Burung hewan3 = Burung(berat: 0.3, jumlahKaki: 2, kecepatanTerbang: 6.7);
 
-  var pakaian2 = Pakaian(warna: "Hitam", size: "M", katagori: "Celana");
-  // pakaian2.katagori = "Celana";
-  // pakaian2.warna = "Hitam";
+  print("Hewan 3 : ${hewan3.nama}, Kategori : ${hewan3.kategori}");
+  print("Jumlah Kaki : ${hewan3.jumlahKaki} kaki");
+  print("Berat : ${hewan3.berat} Kg");
+  print("Kecepatan Terbang : ${hewan3.kecepatanTerbang} Km/Jam");
   print(
-      "${pakaian1.katagori}, Warna : ${pakaian1.warna}, Size : ${pakaian1.size}");
-  print("Ganti Ukuran"); // tidak diizinkan mengganti private atribut
-  // pakaian1.gantiSize("XXS");
-  pakaian1.size = "XS";
-  print(
-      "${pakaian1.katagori}, Warna : ${pakaian1.warna}, Size : ${pakaian1.size}");
-  print(
-      "════════════════════════════════════════════════════════════════════════════════════════════");
-  print(
-      "${pakaian2.katagori}, Warna : ${pakaian2.warna}, Size : ${pakaian2.size}");
+      "🥤🍜🍤🎂🍸🍰🍩🍨🍧🍦🥧🧁🍫🍬🍭🍡 ᗰᗩKᗩᑎ 🥤🍜🍤🎂🍸🍰🍩🍨🍧🍦🥧🧁🍫🍬🍭🍡");
+  hewan3.makan = 0.06;
+  print("Berat hewan 2 setelah makan : ${hewan3.berat} Kg");
 }
