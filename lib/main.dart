@@ -8,15 +8,6 @@ main() {
 }
 
 class MyApp extends StatelessWidget {
-  List<Color> myColors = [
-    Colors.blueAccent,
-    Colors.lime,
-    Colors.greenAccent.shade400,
-    Colors.orange,
-    Colors.red,
-    Colors.deepPurple,
-  ];
-
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -26,18 +17,67 @@ class MyApp extends StatelessWidget {
           centerTitle: true,
           title: Text("Image Widget"),
         ),
-        body: Center(
-          child: Container(
-            height: 800,
-            width: 400,
-            color: Colors.grey,
-            alignment: Alignment.center,
-            child: Image(
-              //   image: AssetImage(
-              //     "images/ankita-khante-unXipCiVSDY-unsplash.jpg",
-              //   ),
-              image: NetworkImage("https://picsum.photos/200/300"),
-            ),
+        body: SingleChildScrollView(
+          scrollDirection: Axis.horizontal,
+          child: Row(
+            children: [
+              Container(
+                width: 100,
+                height: 35,
+                color: Colors.greenAccent,
+                child: Center(
+                  child: Text("Test"),
+                ),
+              ),
+              Container(
+                width: 100,
+                height: 35,
+                color: Colors.greenAccent,
+                child: Center(
+                  child: Text("Test"),
+                ),
+              ),
+              Container(
+                width: 100,
+                height: 35,
+                color: Colors.greenAccent,
+                child: Center(
+                  child: Text("Test"),
+                ),
+              ),
+              Container(
+                width: 100,
+                height: 35,
+                color: Colors.greenAccent,
+                child: Center(
+                  child: Text("Test"),
+                ),
+              ),
+              Container(
+                width: 100,
+                height: 35,
+                color: Colors.greenAccent,
+                child: Center(
+                  child: Text("Test"),
+                ),
+              ),
+              Container(
+                width: 100,
+                height: 35,
+                color: Colors.greenAccent,
+                child: Center(
+                  child: Text("Test"),
+                ),
+              ),
+              Container(
+                width: 100,
+                height: 35,
+                color: Colors.greenAccent,
+                child: Center(
+                  child: Text("Test"),
+                ),
+              ),
+            ],
           ),
         ),
       ),
