@@ -15,334 +15,60 @@ class MyApp extends StatelessWidget {
       home: Scaffold(
         appBar: AppBar(
           centerTitle: true,
-          title: Text("ListView"),
+          title: Text("GridView"),
         ),
-        body: ListView(
-          /// Ukuran ListView mengikuti scrollDirection, apabila scrollDirection: Axis.horizontal maka yang bisa diubah hanya width.
-
-          scrollDirection: Axis.vertical,
-
-          /// [scrollDirection] tidak berlaku untuk Stack, hanya berlaku untuk Column dan Row
+        body: GridView(
+          gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
+            crossAxisCount: 2,
+          ),
           children: [
             Container(
-              width: 100,
-              height: 35,
-              color: Colors.greenAccent,
-              child: Center(
-                child: Text("Test"),
-              ),
+              color: Colors.orange.shade400,
             ),
             Container(
-              width: 100,
-              height: 35,
-              color: Colors.white,
-              child: Center(
-                child: Text("Test"),
-              ),
+              color: Colors.lightBlue,
             ),
             Container(
-              width: 100,
-              height: 35,
-              color: Colors.greenAccent,
-              child: Center(
-                child: Text("Test"),
-              ),
+              color: Colors.pink.shade400,
             ),
             Container(
-              width: 100,
-              height: 35,
-              color: Colors.white,
-              child: Center(
-                child: Text("Test"),
-              ),
+              color: Colors.green.shade400,
             ),
             Container(
-              width: 100,
-              height: 35,
-              color: Colors.greenAccent,
-              child: Center(
-                child: Text("Test"),
-              ),
+              color: Colors.lime.shade400,
             ),
             Container(
-              width: 100,
-              height: 35,
-              color: Colors.white,
-              child: Center(
-                child: Text("Test"),
-              ),
+              color: Colors.purple.shade400,
             ),
             Container(
-              width: 100,
-              height: 35,
-              color: Colors.greenAccent,
-              child: Center(
-                child: Text("Test"),
-              ),
+              color: Colors.indigo.shade400,
             ),
             Container(
-              width: 100,
-              height: 35,
-              color: Colors.white,
-              child: Center(
-                child: Text("Test"),
-              ),
+              color: Colors.brown.shade300,
             ),
             Container(
-              width: 100,
-              height: 35,
-              color: Colors.greenAccent,
-              child: Center(
-                child: Text("Test"),
-              ),
+              color: Colors.orange.shade400,
             ),
             Container(
-              width: 100,
-              height: 35,
-              color: Colors.white,
-              child: Center(
-                child: Text("Test"),
-              ),
+              color: Colors.lightBlue,
             ),
             Container(
-              width: 100,
-              height: 35,
-              color: Colors.greenAccent,
-              child: Center(
-                child: Text("Test"),
-              ),
+              color: Colors.pink.shade400,
             ),
             Container(
-              width: 100,
-              height: 35,
-              color: Colors.white,
-              child: Center(
-                child: Text("Test"),
-              ),
+              color: Colors.green.shade400,
             ),
             Container(
-              width: 100,
-              height: 35,
-              color: Colors.greenAccent,
-              child: Center(
-                child: Text("Test"),
-              ),
+              color: Colors.lime.shade400,
             ),
             Container(
-              width: 100,
-              height: 35,
-              color: Colors.white,
-              child: Center(
-                child: Text("Test"),
-              ),
+              color: Colors.purple.shade400,
             ),
             Container(
-              width: 100,
-              height: 35,
-              color: Colors.greenAccent,
-              child: Center(
-                child: Text("Test"),
-              ),
+              color: Colors.indigo.shade400,
             ),
             Container(
-              width: 100,
-              height: 35,
-              color: Colors.white,
-              child: Center(
-                child: Text("Test"),
-              ),
-            ),
-            Container(
-              width: 100,
-              height: 35,
-              color: Colors.greenAccent,
-              child: Center(
-                child: Text("Test"),
-              ),
-            ),
-            Container(
-              width: 100,
-              height: 35,
-              color: Colors.white,
-              child: Center(
-                child: Text("Test"),
-              ),
-            ),
-            Container(
-              width: 100,
-              height: 35,
-              color: Colors.greenAccent,
-              child: Center(
-                child: Text("Test"),
-              ),
-            ),
-            Container(
-              width: 100,
-              height: 35,
-              color: Colors.white,
-              child: Center(
-                child: Text("Test"),
-              ),
-            ),
-            Container(
-              width: 100,
-              height: 35,
-              color: Colors.greenAccent,
-              child: Center(
-                child: Text("Test"),
-              ),
-            ),
-            Container(
-              width: 100,
-              height: 35,
-              color: Colors.white,
-              child: Center(
-                child: Text("Test"),
-              ),
-            ),
-            Container(
-              width: 100,
-              height: 35,
-              color: Colors.greenAccent,
-              child: Center(
-                child: Text("Test"),
-              ),
-            ),
-            Container(
-              width: 100,
-              height: 35,
-              color: Colors.white,
-              child: Center(
-                child: Text("Test"),
-              ),
-            ),
-            Container(
-              width: 100,
-              height: 35,
-              color: Colors.greenAccent,
-              child: Center(
-                child: Text("Test"),
-              ),
-            ),
-            Container(
-              width: 100,
-              height: 35,
-              color: Colors.white,
-              child: Center(
-                child: Text("Test"),
-              ),
-            ),
-            Container(
-              width: 100,
-              height: 35,
-              color: Colors.greenAccent,
-              child: Center(
-                child: Text("Test"),
-              ),
-            ),
-            Container(
-              width: 100,
-              height: 35,
-              color: Colors.white,
-              child: Center(
-                child: Text("Test"),
-              ),
-            ),
-            Container(
-              width: 100,
-              height: 35,
-              color: Colors.greenAccent,
-              child: Center(
-                child: Text("Test"),
-              ),
-            ),
-            Container(
-              width: 100,
-              height: 35,
-              color: Colors.white,
-              child: Center(
-                child: Text("Test"),
-              ),
-            ),
-            Container(
-              width: 100,
-              height: 35,
-              color: Colors.greenAccent,
-              child: Center(
-                child: Text("Test"),
-              ),
-            ),
-            Container(
-              width: 100,
-              height: 35,
-              color: Colors.white,
-              child: Center(
-                child: Text("Test"),
-              ),
-            ),
-            Container(
-              width: 100,
-              height: 35,
-              color: Colors.greenAccent,
-              child: Center(
-                child: Text("Test"),
-              ),
-            ),
-            Container(
-              width: 100,
-              height: 35,
-              color: Colors.white,
-              child: Center(
-                child: Text("Test"),
-              ),
-            ),
-            Container(
-              width: 100,
-              height: 35,
-              color: Colors.greenAccent,
-              child: Center(
-                child: Text("Test"),
-              ),
-            ),
-            Container(
-              width: 100,
-              height: 35,
-              color: Colors.white,
-              child: Center(
-                child: Text("Test"),
-              ),
-            ),
-            Container(
-              width: 100,
-              height: 35,
-              color: Colors.greenAccent,
-              child: Center(
-                child: Text("Test"),
-              ),
-            ),
-            Container(
-              width: 100,
-              height: 35,
-              color: Colors.white,
-              child: Center(
-                child: Text("Test"),
-              ),
-            ),
-            Container(
-              width: 100,
-              height: 35,
-              color: Colors.greenAccent,
-              child: Center(
-                child: Text("Test"),
-              ),
-            ),
-            Container(
-              width: 100,
-              height: 35,
-              color: Colors.white,
-              child: Center(
-                child: Text("Test"),
-              ),
+              color: Colors.brown.shade300,
             ),
           ],
         ),
