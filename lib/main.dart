@@ -18,8 +18,12 @@ class MyApp extends StatelessWidget {
           title: Text("GridView"),
         ),
         body: GridView(
+          padding: EdgeInsets.all(5),
           gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
             crossAxisCount: 2,
+            crossAxisSpacing: 5,
+            mainAxisSpacing: 5,
+            childAspectRatio: 7 / 9,
           ),
           children: [
             Container(
