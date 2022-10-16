@@ -10,19 +10,6 @@ main() {
 }
 
 class MyApp extends StatelessWidget {
-  List<Map<String, dynamic>> data = List.generate(
-    50,
-    (index) => {
-      "text": "Kotak no ${index + 1}",
-      "color": Color.fromARGB(
-        255,
-        190 + Random().nextInt(256),
-        190 + Random().nextInt(256),
-        190 + Random().nextInt(256),
-      ),
-    },
-  );
-
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -30,19 +17,18 @@ class MyApp extends StatelessWidget {
       home: Scaffold(
         appBar: AppBar(
           centerTitle: true,
-          title: Text("Mapping Collection"),
+          title: Text("Widget Builder"),
         ),
-        body: SingleChildScrollView(
-          scrollDirection: Axis.vertical,
-          child: Column(
-            children: data
-                .map(
-                  (e) => KotakWarna(
-                    text: e["text"],
-                    warna: e["color"],
-                  ),
-                )
-                .toList(),
+        body: ListView.builder(
+          itemCount: 20,
+          itemBuilder: (context, index) => KotakWarna(
+            text: "Kotak ke - ${index + 1}",
+            warna: Color.fromARGB(
+              255,
+              100 + Random().nextInt(255),
+              100 + Random().nextInt(255),
+              100 + Random().nextInt(255),
+            ),
           ),
         ),
       ),
