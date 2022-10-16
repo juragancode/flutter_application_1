@@ -2,8 +2,8 @@ import 'dart:ui';
 
 import 'package:flutter/material.dart';
 
-class test2 extends StatelessWidget {
-  const test2({
+class test3 extends StatelessWidget {
+  const test3({
     Key? key,
   }) : super(key: key);
 
@@ -24,19 +24,11 @@ class test2 extends StatelessWidget {
             icon: Icon(Icons.more_vert),
           )
         ],
-        title: Text("Test 2"),
+        title: Text("Test 3"),
       ),
       body: Center(
-        child: Text(
-          "Haloo!",
-          style: TextStyle(
-            fontSize: 70,
-            fontStyle: FontStyle.italic,
-            fontWeight: FontWeight.bold,
-            // decoration: TextDecoration.lineThrough,
-            // decoration: TextDecoration.overline,
-            decoration: TextDecoration.underline,
-          ),
+        child: FlutterLogo(
+          size: 220,
         ),
       ),
     );

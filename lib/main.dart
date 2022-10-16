@@ -5,6 +5,8 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'widget/kotak_warna.dart';
 import 'widget/test_1.dart';
+import 'widget/test_2.dart';
+import 'widget/test_3.dart';
 
 main() {
   runApp(MyApp());
@@ -15,7 +17,9 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: test1(),
+      // home: test1(),
+      // home: test2(),
+      home: test3(),
     );
   }
 }
