@@ -7,6 +7,7 @@ import 'widget/kotak_warna.dart';
 import 'widget/test_1.dart';
 import 'widget/test_2.dart';
 import 'widget/test_3.dart';
+import 'widget/test_4.dart';
 
 main() {
   runApp(MyApp());
@@ -19,7 +20,7 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       // home: test1(),
       // home: test2(),
-      home: test3(),
+      home: test4(),
     );
   }
 }
