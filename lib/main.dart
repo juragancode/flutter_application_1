@@ -2,6 +2,7 @@ import 'dart:io';
 
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'widget/kotak_warna.dart';
 
 main() {
   runApp(MyApp());
@@ -15,66 +16,22 @@ class MyApp extends StatelessWidget {
       home: Scaffold(
         appBar: AppBar(
           centerTitle: true,
-          title: Text("GridView"),
+          title: Text("Extract Widget"),
         ),
-        body: GridView(
-          padding: EdgeInsets.all(5),
-          gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
-            crossAxisCount: 2,
-            crossAxisSpacing: 5,
-            mainAxisSpacing: 5,
-            childAspectRatio: 7 / 9,
+        body: SingleChildScrollView(
+          scrollDirection: Axis.vertical,
+          child: Column(
+            children: [
+              KotakWarna(text: "Hijau", warna: Colors.green),
+              KotakWarna(text: "Biru", warna: Colors.blueAccent.shade400),
+              KotakWarna(text: "Pink", warna: Colors.pink.shade700),
+              KotakWarna(text: "Orange", warna: Colors.orange.shade800),
+              KotakWarna(text: "Ungu", warna: Colors.purpleAccent.shade700),
+              KotakWarna(text: "Biru", warna: Colors.blueAccent.shade400),
+              KotakWarna(text: "Pink", warna: Colors.pink.shade700),
+              KotakWarna(text: "Orange", warna: Colors.orange.shade800),
+            ],
           ),
-          children: [
-            Container(
-              color: Colors.orange.shade400,
-            ),
-            Container(
-              color: Colors.lightBlue,
-            ),
-            Container(
-              color: Colors.pink.shade400,
-            ),
-            Container(
-              color: Colors.green.shade400,
-            ),
-            Container(
-              color: Colors.lime.shade400,
-            ),
-            Container(
-              color: Colors.purple.shade400,
-            ),
-            Container(
-              color: Colors.indigo.shade400,
-            ),
-            Container(
-              color: Colors.brown.shade300,
-            ),
-            Container(
-              color: Colors.orange.shade400,
-            ),
-            Container(
-              color: Colors.lightBlue,
-            ),
-            Container(
-              color: Colors.pink.shade400,
-            ),
-            Container(
-              color: Colors.green.shade400,
-            ),
-            Container(
-              color: Colors.lime.shade400,
-            ),
-            Container(
-              color: Colors.purple.shade400,
-            ),
-            Container(
-              color: Colors.indigo.shade400,
-            ),
-            Container(
-              color: Colors.brown.shade300,
-            ),
-          ],
         ),
       ),
     );
