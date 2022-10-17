@@ -3,6 +3,7 @@ import 'dart:math';
 
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_application_1/widget/test_11.dart';
 import 'widget/kotak_warna.dart';
 import 'widget/test_GridView.dart';
 import 'widget/test_1.dart';
@@ -15,6 +16,8 @@ import 'widget/test_7.dart';
 import 'widget/test_8.dart';
 import 'widget/test_9.dart';
 import 'widget/test_10.dart';
+import 'widget/test_10.dart';
+import 'widget/test_11.dart';
 
 main() {
   runApp(MyApp());
@@ -35,7 +38,8 @@ class MyApp extends StatelessWidget {
       // home: test7(),
       // home: test8(),
       // home: test9(),
-      home: test10(),
+      // home: test10(),
+      home: test11(),
     );
   }
 }
