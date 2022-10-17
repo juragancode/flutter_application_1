@@ -34,7 +34,7 @@ class test6 extends StatelessWidget {
           height: 270,
           decoration: BoxDecoration(
             color: Colors.blueAccent.shade700,
-            borderRadius: BorderRadius.circular(270 / 2),
+            borderRadius: BorderRadius.circular(50),
           ),
           child: Center(
             child: Text(

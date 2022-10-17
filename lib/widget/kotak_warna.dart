@@ -16,7 +16,10 @@ class KotakWarna extends StatelessWidget {
     return Container(
       width: 200,
       height: 275,
-      color: warna,
+      decoration: BoxDecoration(
+        borderRadius: BorderRadius.circular(20),
+        color: warna,
+      ),
       child: Center(
         child: Text(text),
       ),
