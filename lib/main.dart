@@ -11,6 +11,8 @@ import 'widget/test_3.dart';
 import 'widget/test_4.dart';
 import 'widget/test_5.dart';
 import 'widget/test_6.dart';
+import 'widget/test_7.dart';
+import 'widget/test_8.dart';
 
 main() {
   runApp(MyApp());
@@ -27,7 +29,8 @@ class MyApp extends StatelessWidget {
       // home: test3(),
       // home: test4(),
       // home: test5(),
-      home: test6(),
+      // home: test6(),
+      home: test8(),
     );
   }
 }
