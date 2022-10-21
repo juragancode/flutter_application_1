@@ -7,6 +7,7 @@ import 'package:flutter_application_1/widget/test_11.dart';
 import 'package:flutter_application_1/widget/test_16.dart';
 import 'widget/kotak_warna.dart';
 import 'widget/test_GridView.dart';
+import 'widget/test_network_image.dart';
 import 'widget/test_1.dart';
 import 'widget/test_2.dart';
 import 'widget/test_3.dart';
@@ -30,6 +31,7 @@ import 'widget/test_19.dart';
 import 'widget/test_20.dart';
 import 'widget/test_21.dart';
 import 'widget/test_22.dart';
+import 'widget/test_23.dart';
 
 main() {
   runApp(MyApp());
@@ -41,6 +43,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       // home: testGridView(),
+      // home: networkImage(),
       // home: test1(),
       // home: test2(),
       // home: test3(),
@@ -62,7 +65,8 @@ class MyApp extends StatelessWidget {
       // home: test19(),
       // home: test20(),
       // home: test21(),
-      home: test22(),
+      // home: test22(),
+      home: test23(),
     );
   }
 }

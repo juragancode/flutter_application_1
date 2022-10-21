@@ -30,7 +30,7 @@ class test19 extends StatelessWidget {
       ),
       body: ListView.builder(
         padding: EdgeInsets.all(20),
-        itemCount: 25,
+        itemCount: 10,
         itemBuilder: (context, index) => Padding(
           padding: const EdgeInsets.only(bottom: 30),
           child: Container(
@@ -40,15 +40,16 @@ class test19 extends StatelessWidget {
             decoration: BoxDecoration(
               borderRadius: BorderRadius.circular(20),
               color: Colors.grey.shade300,
-              // image: DecorationImage(
-              //   fit: BoxFit.cover,
-              //   image: NetworkImage(
-              //     "https://random.imagecdn.app/500/150",
-              //   ),
-              // ),
+              image: DecorationImage(
+                fit: BoxFit.cover,
+                image: NetworkImage(
+                  // "https://picsum.photos/id/${1000 + index}/200/300",
+                  "https://picsum.photos/id/${55 + index}/200/300",
+                ),
+              ),
             ),
             child: Text(
-              "Hello ${index + 1}",
+              "Picture ${index + 1}",
               style: TextStyle(
                 fontSize: 30,
                 color: Colors.white,

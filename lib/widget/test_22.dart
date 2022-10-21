@@ -36,13 +36,13 @@ class test22 extends StatelessWidget {
               width: 5,
             ),
             image: DecorationImage(
-              // image: NetworkImage(
-              //   "https://i.picsum.photos/id/1004/5616/3744.jpg?hmac=Or7EJnz-ky5bsKa9_frdDcDCR9VhCP8kMnbZV6-WOrY",
-              // ),
               fit: BoxFit.cover,
-              image: AssetImage(
-                "images/ankita-khante-unXipCiVSDY-unsplash.jpg",
+              image: NetworkImage(
+                "https://i.picsum.photos/id/1004/5616/3744.jpg?hmac=Or7EJnz-ky5bsKa9_frdDcDCR9VhCP8kMnbZV6-WOrY",
               ),
+              // image: AssetImage(
+              //   "images/ankita-khante-unXipCiVSDY-unsplash.jpg",
+              // ),
             ),
           ),
         ),
